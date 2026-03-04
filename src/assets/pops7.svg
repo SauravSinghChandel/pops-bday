@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Pops 7 placeholder</title>
+  <desc id="desc">Mint placeholder card labeled Pops 7.</desc>
+  <defs>
+    <linearGradient id="bg7" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#c2ffd8" />
+      <stop offset="100%" stop-color="#465efb" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg7)" />
+  <path d="M0 300 C280 220 420 380 620 300 S980 220 1200 320 V0 H0 Z" fill="rgba(255,255,255,0.16)" />
+  <text x="130" y="650" fill="#effff6" font-family="Verdana, sans-serif" font-size="170" font-weight="700">Pops</text>
+  <text x="130" y="860" fill="#effff6" font-family="Verdana, sans-serif" font-size="240" font-weight="700">7</text>
+</svg>

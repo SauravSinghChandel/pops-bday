@@ -1,0 +1,324 @@
+:root {
+  color: #1f1a17;
+  background:
+    radial-gradient(circle at top left, rgba(255, 214, 153, 0.55), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 154, 118, 0.3), transparent 24%),
+    linear-gradient(180deg, #f7efe0 0%, #f5e7d2 45%, #efe0c7 100%);
+  font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #281f19;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.28), transparent 38%),
+    linear-gradient(180deg, #f7efe0 0%, #f3e2c4 100%);
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto;
+  z-index: -1;
+  border-radius: 999px;
+  filter: blur(20px);
+  opacity: 0.55;
+}
+
+body::before {
+  top: 6rem;
+  left: -4rem;
+  width: 12rem;
+  height: 12rem;
+  background: rgba(228, 143, 84, 0.34);
+}
+
+body::after {
+  right: -3rem;
+  bottom: 5rem;
+  width: 10rem;
+  height: 10rem;
+  background: rgba(109, 154, 126, 0.24);
+}
+
+button,
+img {
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.page-shell {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.25rem 0 4rem;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid rgba(117, 82, 47, 0.18);
+  border-radius: 32px;
+  background:
+    linear-gradient(140deg, rgba(255, 250, 242, 0.92), rgba(255, 239, 216, 0.82)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(145, 104, 71, 0.06) 0,
+      rgba(145, 104, 71, 0.06) 2px,
+      transparent 2px,
+      transparent 20px
+    );
+  box-shadow: 0 24px 50px rgba(108, 74, 45, 0.12);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  right: -1rem;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(237, 188, 97, 0.45), transparent 68%);
+}
+
+.hero__eyebrow {
+  position: relative;
+  margin: 0 0 0.8rem;
+  color: #9c5c32;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  position: relative;
+  margin: 0;
+  font-family: Georgia, Cambria, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 7vw, 4.8rem);
+  line-height: 0.95;
+  color: #3b2415;
+}
+
+.hero__subtitle {
+  position: relative;
+  max-width: 40rem;
+  margin: 1rem 0 0;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: #5c4737;
+}
+
+.photo-wall {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  margin-top: 2rem;
+  padding: 0.5rem 0 1rem;
+}
+
+.photo-card {
+  position: relative;
+  cursor: pointer;
+  padding: 0.85rem 0.85rem 1.15rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: linear-gradient(180deg, #fffef8, #fff8ec);
+  box-shadow:
+    0 18px 30px rgba(98, 65, 38, 0.16),
+    0 2px 4px rgba(98, 65, 38, 0.08);
+  transform: rotate(var(--tile-rotation));
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+  text-align: left;
+}
+
+.photo-card:hover,
+.photo-card:focus-visible {
+  transform: translateY(-10px) rotate(0deg);
+  box-shadow:
+    0 26px 36px rgba(98, 65, 38, 0.2),
+    0 6px 8px rgba(98, 65, 38, 0.1);
+  outline: none;
+}
+
+.photo-card__pin {
+  position: absolute;
+  top: -0.45rem;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffe5c9, #cb6d4e 62%, #8f4129 100%);
+  transform: translateX(-50%);
+  box-shadow: 0 3px 8px rgba(77, 38, 21, 0.24);
+}
+
+.photo-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid rgba(120, 88, 64, 0.15);
+  background: #f5f0e6;
+}
+
+.photo-card__caption {
+  margin-top: 0.9rem;
+  padding: 0 0.15rem;
+  font-family: "Marker Felt", "Segoe Print", "Bradley Hand", cursive;
+  font-size: 1.08rem;
+  color: #5d4737;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(17, 13, 10, 0.7);
+  backdrop-filter: blur(7px);
+}
+
+.lightbox__panel {
+  width: min(900px, 100%);
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 241, 0.98), rgba(252, 237, 211, 0.98));
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox__header,
+.lightbox__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.lightbox__count {
+  margin: 0;
+  color: #7a5f49;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.lightbox__close,
+.lightbox__nav {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: #3d2719;
+  color: #fff9f0;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease;
+}
+
+.lightbox__close:hover,
+.lightbox__close:focus-visible,
+.lightbox__nav:hover,
+.lightbox__nav:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  background: #5b3722;
+}
+
+.lightbox__figure {
+  margin: 1rem 0;
+}
+
+.lightbox__image {
+  width: 100%;
+  max-height: 68vh;
+  object-fit: contain;
+  border-radius: 20px;
+  border: 1px solid rgba(120, 88, 64, 0.18);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.62), transparent 40%),
+    #eedec4;
+}
+
+.lightbox__caption {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Marker Felt", "Segoe Print", "Bradley Hand", cursive;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  color: #4e3829;
+}
+
+@media (min-width: 720px) {
+  .page-shell {
+    width: min(1200px, calc(100% - 3rem));
+  }
+
+  .photo-wall {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo-wall {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.6rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-shell {
+    width: min(100%, calc(100% - 1rem));
+    padding-top: 1rem;
+  }
+
+  .hero {
+    border-radius: 26px;
+  }
+
+  .photo-card__caption {
+    font-size: 1rem;
+  }
+
+  .lightbox__panel {
+    padding: 0.9rem;
+    border-radius: 22px;
+  }
+
+  .lightbox__header,
+  .lightbox__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lightbox__close,
+  .lightbox__nav {
+    width: 100%;
+    text-align: center;
+  }
+}
