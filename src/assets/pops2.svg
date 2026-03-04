@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
-  <title id="title">Pops 2 placeholder</title>
-  <desc id="desc">Teal placeholder card labeled Pops 2.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Mountain Miles placeholder</title>
+  <desc id="desc">Landscape placeholder card labeled Mountain Miles.</desc>
   <defs>
     <linearGradient id="bg2" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#48c6ef" />
-      <stop offset="100%" stop-color="#6f86d6" />
+      <stop offset="0%" stop-color="#d7ecfb" />
+      <stop offset="100%" stop-color="#4f6b83" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="1500" fill="url(#bg2)" />
-  <rect x="110" y="120" width="980" height="1260" rx="54" fill="rgba(255,255,255,0.1)" />
-  <circle cx="330" cy="330" r="140" fill="rgba(255,255,255,0.14)" />
-  <text x="130" y="650" fill="#effbff" font-family="Verdana, sans-serif" font-size="170" font-weight="700">Pops</text>
-  <text x="130" y="860" fill="#effbff" font-family="Verdana, sans-serif" font-size="240" font-weight="700">2</text>
+  <rect width="1500" height="1100" fill="url(#bg2)" />
+  <circle cx="1210" cy="200" r="95" fill="rgba(255,212,151,0.78)" />
+  <path d="M0 790L130 720L250 760L380 620L520 770L660 565L850 810L1020 610L1210 840L1380 690L1500 765V1100H0Z" fill="rgba(20,37,54,0.22)" />
+  <text x="110" y="470" fill="#fefaf4" font-family="Verdana, sans-serif" font-size="150" font-weight="700">Mountain</text>
+  <text x="110" y="655" fill="#fefaf4" font-family="Verdana, sans-serif" font-size="200" font-weight="700">Miles</text>
 </svg>

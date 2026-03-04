@@ -1,15 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
-  <title id="title">Pops 1 placeholder</title>
-  <desc id="desc">Warm orange placeholder card labeled Pops 1.</desc>
+  <title id="title">Yamaha Day placeholder</title>
+  <desc id="desc">Portrait placeholder card labeled Yamaha Day.</desc>
   <defs>
     <linearGradient id="bg1" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#f6d365" />
-      <stop offset="100%" stop-color="#fda085" />
+      <stop offset="0%" stop-color="#1e62a8" />
+      <stop offset="100%" stop-color="#f29a4b" />
     </linearGradient>
   </defs>
   <rect width="1200" height="1500" fill="url(#bg1)" />
-  <circle cx="950" cy="280" r="180" fill="rgba(255,255,255,0.18)" />
-  <circle cx="280" cy="1180" r="220" fill="rgba(255,255,255,0.14)" />
-  <text x="120" y="640" fill="#fff7ea" font-family="Verdana, sans-serif" font-size="170" font-weight="700">Pops</text>
-  <text x="120" y="840" fill="#fff7ea" font-family="Verdana, sans-serif" font-size="240" font-weight="700">1</text>
+  <path d="M0 1080L160 970L300 1040L450 920L620 1110L780 930L970 1130L1200 980V1500H0Z" fill="rgba(255,255,255,0.16)" />
+  <text x="110" y="635" fill="#fdf8ef" font-family="Verdana, sans-serif" font-size="150" font-weight="700">Yamaha</text>
+  <text x="110" y="845" fill="#fdf8ef" font-family="Verdana, sans-serif" font-size="210" font-weight="700">Day</text>
 </svg>

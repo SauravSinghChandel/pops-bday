@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" aria-hidden="true">
+  <defs>
+    <linearGradient id="ridgeBack" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#91abc0" />
+      <stop offset="100%" stop-color="#6d879e" />
+    </linearGradient>
+    <linearGradient id="ridgeMid" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#5f7b92" />
+      <stop offset="100%" stop-color="#456076" />
+    </linearGradient>
+    <linearGradient id="ridgeFront" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#32495f" />
+      <stop offset="100%" stop-color="#213244" />
+    </linearGradient>
+    <linearGradient id="road" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#3d4852" />
+      <stop offset="100%" stop-color="#1e252d" />
+    </linearGradient>
+  </defs>
+
+  <path
+    d="M0 540L114 486L212 532L320 426L432 520L560 378L684 536L808 366L952 548L1096 408L1238 530L1398 352L1518 470L1600 436V1000H0Z"
+    fill="url(#ridgeBack)"
+    opacity="0.88"
+  />
+  <path
+    d="M0 654L148 586L274 662L406 520L528 632L676 484L824 670L972 516L1110 682L1252 562L1404 694L1542 590L1600 620V1000H0Z"
+    fill="url(#ridgeMid)"
+  />
+  <path
+    d="M0 782L128 712L248 772L376 632L500 802L656 628L804 836L950 650L1094 854L1240 690L1398 862L1538 726L1600 752V1000H0Z"
+    fill="url(#ridgeFront)"
+  />
+
+  <path
+    d="M744 1000C760 920 774 849 786 780C800 701 813 633 832 571C850 512 873 462 904 416H956C914 468 886 520 868 580C848 640 836 708 824 786C812 854 798 922 784 1000H744Z"
+    fill="url(#road)"
+  />
+  <path
+    d="M844 1000C838 946 832 894 826 842C818 774 812 714 818 650C824 590 841 536 869 490H883C856 538 840 592 835 650C829 711 834 773 841 840C847 893 853 946 858 1000H844Z"
+    fill="#ffd79d"
+    opacity="0.82"
+  />
+  <path
+    d="M848 1000C843 958 838 917 834 878C828 815 824 758 829 701C834 648 847 599 869 560"
+    fill="none"
+    stroke="#253340"
+    stroke-linecap="round"
+    stroke-opacity="0.18"
+    stroke-width="14"
+  />
+</svg>

@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
-  <title id="title">Pops 8 placeholder</title>
-  <desc id="desc">Gold placeholder card labeled Pops 8.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Birthday Ride placeholder</title>
+  <desc id="desc">Landscape placeholder card labeled Birthday Ride.</desc>
   <defs>
     <linearGradient id="bg8" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#fddb92" />
-      <stop offset="100%" stop-color="#d1fdff" />
+      <stop offset="0%" stop-color="#d9ebf8" />
+      <stop offset="100%" stop-color="#f1b469" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="1500" fill="url(#bg8)" />
-  <path d="M160 180 H1040 V1320 H160 Z" fill="rgba(255,255,255,0.09)" />
-  <circle cx="820" cy="380" r="150" fill="rgba(255,255,255,0.18)" />
-  <text x="130" y="650" fill="#fffdf5" font-family="Verdana, sans-serif" font-size="170" font-weight="700">Pops</text>
-  <text x="130" y="860" fill="#fffdf5" font-family="Verdana, sans-serif" font-size="240" font-weight="700">8</text>
+  <rect width="1500" height="1100" fill="url(#bg8)" />
+  <path d="M0 820L210 705L390 820L575 635L742 815L910 650L1110 850L1305 710L1500 825V1100H0Z" fill="rgba(30,50,70,0.22)" />
+  <text x="110" y="460" fill="#fffaf5" font-family="Verdana, sans-serif" font-size="150" font-weight="700">Birthday</text>
+  <text x="110" y="650" fill="#fffaf5" font-family="Verdana, sans-serif" font-size="205" font-weight="700">Ride</text>
 </svg>
