@@ -88,10 +88,29 @@ const photos = [
   },
 ];
 
+function Cloud({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 260 120"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M46 100C21 100 5 84 5 61C5 39 22 23 45 23C53 23 61 25 69 29C79 12 98 0 120 0C151 0 177 22 181 52C182 52 183 52 184 52C217 52 244 71 244 95C244 109 233 120 203 120H46V100Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
 function ScenicBackdrop() {
   return (
     <div className="scenery" aria-hidden="true">
       <img className="scenery__scene" src={bgScene} alt="" />
+      <Cloud className="scenery__cloud scenery__cloud--one" />
+      <Cloud className="scenery__cloud scenery__cloud--two" />
+      <Cloud className="scenery__cloud scenery__cloud--three" />
     </div>
   );
 }

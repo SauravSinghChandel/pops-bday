@@ -91,6 +91,34 @@ button {
   opacity: 0.99;
 }
 
+.scenery__cloud {
+  position: absolute;
+  top: 0;
+  left: -20rem;
+  color: rgba(249, 253, 255, 0.9);
+  will-change: transform;
+}
+
+.scenery__cloud--one {
+  top: clamp(3.8rem, 9vh, 6.2rem);
+  width: clamp(8rem, 16vw, 12rem);
+  animation: cloudRideOne 30s linear infinite;
+}
+
+.scenery__cloud--two {
+  top: clamp(6.8rem, 15vh, 9rem);
+  width: clamp(7rem, 14vw, 10rem);
+  opacity: 0.78;
+  animation: cloudRideTwo 38s linear infinite;
+}
+
+.scenery__cloud--three {
+  top: clamp(9rem, 20vh, 12rem);
+  width: clamp(6rem, 12vw, 8.5rem);
+  opacity: 0.72;
+  animation: cloudRideThree 46s linear infinite;
+}
+
 .page-shell {
   position: relative;
   z-index: 1;
@@ -481,6 +509,36 @@ button {
   }
 }
 
+@keyframes cloudRideOne {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(calc(100vw + 26rem), 0, 0);
+  }
+}
+
+@keyframes cloudRideTwo {
+  from {
+    transform: translate3d(-18vw, 0, 0);
+  }
+
+  to {
+    transform: translate3d(calc(100vw + 24rem), 0, 0);
+  }
+}
+
+@keyframes cloudRideThree {
+  from {
+    transform: translate3d(-36vw, 0, 0);
+  }
+
+  to {
+    transform: translate3d(calc(100vw + 22rem), 0, 0);
+  }
+}
+
 @media (min-width: 720px) {
   .page-shell {
     width: min(1180px, calc(100% - 2.5rem));
@@ -576,7 +634,8 @@ button {
   }
 
   .hero__bike-runner,
-  .hero__bike {
+  .hero__bike,
+  .scenery__cloud {
     animation: none !important;
   }
 }
